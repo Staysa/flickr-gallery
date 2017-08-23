@@ -1,0 +1,39 @@
+@import "normalize.css";
+
+body {
+    overflow: hidden;
+}
+main {
+    width: 1024px;
+    height: 768px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 20px auto;
+    padding: 0 20px;
+    background: #fff;
+    position: relative;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.row:last-child {
+    display: none;
+}
+span {
+    width: 20%;
+    height: 250px;
+    margin: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s linear;
+}
+span.active {
+    border-color: #ccc;
+    transform: scale(1.2);
+    box-shadow: 1px 2px 8px 0 #b7b7b7;
+}
